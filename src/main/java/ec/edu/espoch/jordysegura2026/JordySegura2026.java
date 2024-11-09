@@ -43,7 +43,7 @@ public class JordySegura2026 {
             menu = ingresoMenu.nextInt();
             ingresoMenu.nextLine();
             
-            //PROMEDIO CASO 1: con el fin de que en el caso 3 ya tenga el promedio porque se necesita
+            //PROMEDIO CASO 1: ya que en el caso 3 se necesita el promedio
             float suma = 0;
 
                     for (int i = 0; i < 5; i++) {
