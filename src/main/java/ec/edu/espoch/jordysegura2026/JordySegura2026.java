@@ -33,7 +33,8 @@ public class JordySegura2026 {
         Scanner ingresoMenu = new Scanner(System.in);
         int menu = 0;
         while (menu!=4) {
-            System.out.println("-----INGRESE UNA OPCION DEL 1-5.-----");
+            System.out.println("");
+            System.out.println("\n-----INGRESE UNA OPCION DEL 1-5.-----");
             System.out.println("1.  CALCULAR EL PRECIO PROMEDIO DE LOS PRODUCTOS.");
             System.out.println("2.  MOSTRAR EL PRECIO MÁS ALTO.");
             System.out.println("3.  CONTAR PRODUCTOS POR ENCIMA DEL PROMEDIO.");
@@ -42,16 +43,17 @@ public class JordySegura2026 {
             menu = ingresoMenu.nextInt();
             ingresoMenu.nextLine();
             
-            switch (menu) {
-                case 1 -> {
-                    System.out.println("----CALCULAR EL PRECIO PROMEDIO DE LOS PRODUCTOS----");
-                    float suma = 0;
+            //PROMEDIO CASO 1: con el fin de que en el caso 3 ya tenga el promedio porque se necesita
+            float suma = 0;
 
                     for (int i = 0; i < 5; i++) {
                         suma = precioProducto[i] + suma;
                     }
                     promedioPrecios = suma / 5;
-
+                    
+            switch (menu) {
+                case 1 -> {
+                    System.out.println("----CALCULAR EL PRECIO PROMEDIO DE LOS PRODUCTOS----");
                     System.out.println("El promedio de los precios es: " + promedioPrecios);
                 }
 
